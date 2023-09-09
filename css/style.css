@@ -652,7 +652,10 @@ body {
 	margin: 30px 0;
 }
 .contacts__infj-socials {}
-.contacts__img {}
+.contacts__img {
+	max-width: 100%;
+  width: 50%;
+}
 
 .socials {}
 .socials {}
@@ -870,6 +873,33 @@ body {
 	}
 	.how__box {
 		grid-template-columns: repeat(3, 1fr);
+	}
+	.how__decoration {
+		grid-column: span 3;
+		order: 0;
+	}
+	.item-promo {
+		grid-column: span 1;
+		order: 1;
+	}
+	.how__item:nth-child(1),
+	.how__item:nth-child(2),
+	.how__item:nth-child(3) {
+		order: 0;
+	}
+	.how__item:nth-child(4),
+	.how__item:nth-child(5),
+	.how__item:nth-child(7),
+	.how__item:nth-child(8) {
+		order: 1;
+	}
+	
+	.how__item:nth-child(6) {
+		order: 6;
+	}
+	.decoration {
+    bottom: 22px;
+    width: 116px;
 	}
 }
 
