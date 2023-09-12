@@ -153,6 +153,7 @@ body {
 .menu__list {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	gap: 25px;
 	color: #272525;
 	font-family: Open Sans;
@@ -663,7 +664,7 @@ body {
 }
 .footer__menu {
 	padding-right: 0;
-	max-width: 380px;
+	max-width: 415px;
 	width: auto;
 }
 .footer__menu .menu__list {
@@ -769,6 +770,10 @@ body {
 	.header__content-text {
     max-width: 421px;
 	}	
+	.footer__phones {
+		flex-direction: column;
+		gap: 8px;
+	}
 }
 
 @media(max-width: 1180px) {
@@ -801,10 +806,6 @@ body {
 		height: 138px;
 		object-fit: cover;
 	}
-	.footer__phones {
-		flex-direction: column;
-		gap: 8px;
-	}
 }
 
 @media(max-width: 1110px) {
@@ -829,6 +830,7 @@ body {
 		width: 200px;
 	} 
 }
+
 @media(max-width: 1083px) {
 	.how__box {
 		grid-template-columns: repeat(3, 1fr);
@@ -887,6 +889,9 @@ body {
 	}
 	.about__content-box {
 		gap: 20px;
+	}
+	.footer__menu .menu__list {
+		gap: 15px;
 	}
 }
 
