@@ -96,3 +96,25 @@ $('.burger').on('click', function () {
 	$('.menu__list').toggleClass('menu__list--active');
 	$(this).toggleClass("open");
 });
+
+// Form
+$(document).ready(function () {
+
+	//E-mail Ajax Send
+	$("form").submit(function () { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function () {
+			alert("Дякуємо! Ми отримали вашу заявку. Наш менеджер зв'яжеться з Вами найближчим часом.");
+			setTimeout(function () {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
+
+});
