@@ -118,3 +118,30 @@ $(document).ready(function () {
 	});
 
 });
+
+
+// TABS
+const tabs = document.querySelectorAll('.tab');
+const tabContents = document.querySelectorAll('.tab-content');
+
+tabs.forEach((tab) => {
+	tab.addEventListener('click', () => {
+		const tabId = tab.getAttribute('data-tab');
+
+		// Переключение класса активности кнопки
+		tabs.forEach((tab) => {
+			tab.classList.remove('tab-active');
+		});
+		tab.classList.add('tab-active');
+
+		// Переключение класса видимости контента
+		tabContents.forEach((tabContent) => {
+			if (tabContent.getAttribute('data-tab') === tabId) {
+				tabContent.classList.remove('tab-hide');
+			} else {
+				tabContent.classList.add('tab-hide');
+			}
+		});
+	});
+});
+
