@@ -717,7 +717,7 @@ body {
 
 
 /*---------------RESPONSIVE---------*/
-@media(max-width: 1401px) {
+@media(max-width: 1402px) {
 	.decoration {
 		bottom: 64px;
 	}
