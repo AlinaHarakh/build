@@ -131,7 +131,7 @@ body {
 	border-radius: 4px;
 	background: #FF2D2D;
 	box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.12);
-	margin-bottom: 100px;
+	margin-bottom: 130px;
 	transition: all .5s;
 	border-radius: 4px;
 }
@@ -199,6 +199,7 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 600px;
+	background-position: center;
 }
 .slide__content {
 	margin: 43px;
@@ -1099,6 +1100,16 @@ body {
 	.header__content-text {
 		margin-bottom: 28px;
 	}	
+	.header__content-left {
+		width: 100%;
+	}
+	.header__content-inner {
+	flex-direction: column;
+	align-items: flex-start;
+	}
+	.rigthside {
+		width: 100%;
+	}
 }
 
 @media(max-width: 670px) {
@@ -1188,21 +1199,11 @@ body {
 }
 
 @media(max-width: 560px) {
-	.header__content-left {
-		width: 100%;
-	}
-	.header__content-inner {
-	flex-direction: column;
-	align-items: flex-start;
-	}
 	.socials {
 		justify-content: flex-end;
 	}
 	.header__content-btn {
     margin-bottom: 15px;
-	}
-	.rigthside {
-		width: 100%;
 	}
 	.contacts__inner {
 		flex-direction: column;

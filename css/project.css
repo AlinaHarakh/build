@@ -118,14 +118,11 @@
 .layout {
 	margin-bottom: 100px;
 }
-.layout__inner {}
-.layout__title {}
 .layout__items {
 	display: flex;
 	justify-content: space-between;
 	gap: 20px;
 }
-.layout__item {}
 .layout__item-title {
 	font-family:'Oswald', sans-serif;
 	font-size: 20px;
