@@ -358,6 +358,7 @@
 	.info__inner {
 		flex-wrap: wrap;
 		gap: 30px 10px;
+		justify-content: flex-start;
 	}
 	.info__item {
 		width: 32.33%;
@@ -520,6 +521,9 @@
 	.info__item {
 		width: 50%;
 	}
+	.layout__item:nth-child(2) {
+    align-self: flex-start;
+}
 	.equipment__content-box {
 		flex-direction: column;
 	}
@@ -573,6 +577,14 @@
 	}
 	.layout__item-img {
 		width: 100%;
+	}
+	.layout__item-list {
+    display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+	}
+	.layout__item-text {
+		width: 44%;
 	}
 }
 
