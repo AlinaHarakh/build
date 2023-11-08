@@ -13,6 +13,7 @@ $(document).ready(function () {
 		// centerMode: true,
 		// variableWidth: true,
 		focusOnSelect: true,
+		// initialSlide: 0,
 		asNavFor: ".sliderbig",
 		responsive: [
 			{
@@ -20,6 +21,25 @@ $(document).ready(function () {
 				settings: {
 					slidesToShow: 2,
 					// variableWidth: false,
+				}
+			},
+			{
+				breakpoint: 1061,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 770,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 700,
+				settings: {
+					slidesToShow: 2,
 				}
 			}
 		],
@@ -34,6 +54,7 @@ $(document).ready(function () {
 		$('.slick-dots li button').eq(currentSlide).parent().addClass('slick-active');
 
 	});
+
 	$('.sliderbig').slick({
 		arrows: false,
 		infinite: true,
