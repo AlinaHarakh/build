@@ -104,10 +104,20 @@ $(document).ready(function () {
 	});
 });
 
+// $('.burger').on('click', function () {
+// 	$('.menu__list').toggleClass('menu__list--active');
+// 	$(this).toggleClass("open");
+// });
 $('.burger').on('click', function () {
 	$('.menu__list').toggleClass('menu__list--active');
 	$(this).toggleClass("open");
 });
+
+$('.menu__link').on('click', function () {
+	$('.menu__list').removeClass('menu__list--active');
+	$('.burger').removeClass('open');
+});
+
 
 // Form
 $(document).ready(function () {
