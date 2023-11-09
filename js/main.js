@@ -8,19 +8,14 @@ $(document).ready(function () {
 		speed: 500,
 		easing: 'ease',
 		infinite: true,
-		// autoPlay:true,
 		waitForAnimate: true,
-		// centerMode: true,
-		// variableWidth: true,
 		focusOnSelect: true,
-		// initialSlide: 0,
 		asNavFor: ".sliderbig",
 		responsive: [
 			{
 				breakpoint: 1365,
 				settings: {
 					slidesToShow: 2,
-					// variableWidth: false,
 				}
 			},
 			{
@@ -63,8 +58,6 @@ $(document).ready(function () {
 	});
 	$('.projects-slider').slick({
 		arrows: true,
-		// variableWidth: true,
-		// centerMode: true,
 		centerMode: true,
 		focusOnSelect: true,
 		dots: true,
@@ -80,14 +73,12 @@ $(document).ready(function () {
 				breakpoint: 1300,
 				settings: {
 					slidesToShow: 3,
-					// variableWidth: false,
 				}
 			},
 			{
 				breakpoint: 950,
 				settings: {
 					slidesToShow: 2,
-					// variableWidth: false,
 				}
 			},
 			{
@@ -139,30 +130,3 @@ $(document).ready(function () {
 	});
 
 });
-
-
-// TABS
-const tabs = document.querySelectorAll('.tab');
-const tabContents = document.querySelectorAll('.tab-content');
-
-tabs.forEach((tab) => {
-	tab.addEventListener('click', () => {
-		const tabId = tab.getAttribute('data-tab');
-
-		// Переключение класса активности кнопки
-		tabs.forEach((tab) => {
-			tab.classList.remove('tab-active');
-		});
-		tab.classList.add('tab-active');
-
-		// Переключение класса видимости контента
-		tabContents.forEach((tabContent) => {
-			if (tabContent.getAttribute('data-tab') === tabId) {
-				tabContent.classList.remove('tab-hide');
-			} else {
-				tabContent.classList.add('tab-hide');
-			}
-		});
-	});
-});
-
